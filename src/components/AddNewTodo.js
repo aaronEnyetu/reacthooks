@@ -6,6 +6,7 @@ const AddNewTodo = ({addTodo}) => {
         e.preventDefault()
         // console.log(todos)
         addTodo(todos)
+        setTodos('')
     }
     return (
         <form onSubmit={handleSubmit}>
